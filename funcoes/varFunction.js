@@ -1,16 +1,21 @@
-const num1 = 10
+var num1 = 10
 
-var numero = (x) => {
+const numero = (x) => {
     return x + x
 }
 
 
-var divide = (x,y) => {
+const divide = (x,y) => {
     if (x > y)
         return x / y
     else
         return y / x   
 }
 
+const multiplica = (x,y) => {
+    return x * y  
+}
+
 console.log(numero(10))
 console.log(divide(8,12))
+console.log(multiplica(10,3))
