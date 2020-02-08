@@ -1,0 +1,13 @@
+<h1>Lista de Posts</h1>
+
+
+{{#each dataPost}}
+    <small>{{createdAt}}</small>
+    <h2>{{titulo}}</h2>
+    <p>{{conteudo}}</p>
+    <form action="/deletar" method="POST">
+        <input name="id" value="{{id}}" hidden>
+        <button class="btn waves-effect waves-light" type="submit">Deletar</button>
+    </form>    
+    <hr>
+{{/each}}
